@@ -12,7 +12,7 @@ export async function POST(request: Request) {
     const filePath = path.join(TEMP_DIR, filename);
     await fs.writeFile(filePath, JSON.stringify(data, null, 2));
     return NextResponse.json({ success: true, filename });
-  } catch (err) {
+  } catch (_) {
     return NextResponse.json(
       { success: false, message: 'Failed to save results' },
       { status: 500 }

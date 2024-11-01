@@ -95,31 +95,35 @@ const handleTaskComplete = async () => {
   setSaveStatus('Saving results...');
   
   try {
-    const response = await fetch('/api/save-results', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        participant: participantData,
-        trials: responses,
-        stats: trialStats,
-        phaseTimes: phaseTimes
-      }),
-    });
-
-    if (response.ok) {
-      setSaveStatus('Results saved successfully!');
-    } else {
-      setSaveStatus('Error saving results. Please contact the researcher.');
-    }
-  } catch (err) {
-    console.error('Error saving results:', err);
-    setSaveStatus('Error saving results. Please contact the researcher.');
-  }
-
-  setCurrentPhase('complete');
-};
+    const handleTaskComplete = async () => {
+      setSaveStatus('Saving results...');
+      
+      try {
+        const response = await fetch('/api/save-results', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            participant: participantData,
+            trials: responses,
+            stats: trialStats,
+            phaseTimes: phaseTimes
+          }),
+        });
+    
+        if (response.ok) {
+          setSaveStatus('Results saved successfully!');
+        } else {
+          setSaveStatus('Error saving results. Please contact the researcher.');
+        }
+      } catch (err) {
+        console.error('Error saving results:', err);
+        setSaveStatus('Error saving results. Please contact the researcher.');
+      }
+    
+      setCurrentPhase('complete');
+    };
 
   const completePhase = (currentPhase) => {
     const phaseEndTime = Date.now();
