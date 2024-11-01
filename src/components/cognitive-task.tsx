@@ -72,6 +72,7 @@ const LetterAlternationTask = () => {
   // Keyboard event listener
   // In your cognitive-task.tsx file, update the useEffect hook:
 
+// Remove the previous useEffect and replace with this:
 useEffect(() => {
   const handleKeyPress = (event: KeyboardEvent) => {
     if ((currentPhase === 'trial1' || currentPhase === 'trial2' || currentPhase === 'trial3') && 
@@ -86,10 +87,8 @@ useEffect(() => {
   };
 
   window.addEventListener('keydown', handleKeyPress);
-  return () => {
-    window.removeEventListener('keydown', handleKeyPress);
-  };
-}, [currentPhase, showStimulus, feedback.show, handleResponse]); // Added handleResponse
+  return () => window.removeEventListener('keydown', handleKeyPress);
+}, [currentPhase, showStimulus, feedback.show]); // We've removed handleResponse from deps
 
 // And in handleTaskComplete, remove the localStorageKey variable:
 const handleTaskComplete = async () => {
@@ -114,8 +113,8 @@ const handleTaskComplete = async () => {
     } else {
       setSaveStatus('Error saving results. Please contact the researcher.');
     }
-  } catch (error) {
-    console.error('Error saving results:', error);
+  } catch (err) {
+    console.error('Error saving results:', err);
     setSaveStatus('Error saving results. Please contact the researcher.');
   }
 
