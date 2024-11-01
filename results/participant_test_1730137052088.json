@@ -1,0 +1,703 @@
+{
+  "participant": {
+    "id": "test",
+    "name": "test",
+    "dateOfBirth": "1999-01-01",
+    "education": "12",
+    "date": "2024-10-28"
+  },
+  "trials": [
+    {
+      "trialNumber": 1,
+      "trialType": "trial1",
+      "stimulus": "A",
+      "response": "A",
+      "isCorrect": true,
+      "reactionTime": 1447,
+      "isColored": true
+    },
+    {
+      "trialNumber": 2,
+      "trialType": "trial1",
+      "stimulus": "B",
+      "response": "B",
+      "isCorrect": true,
+      "reactionTime": 826,
+      "isColored": true
+    },
+    {
+      "trialNumber": 3,
+      "trialType": "trial1",
+      "stimulus": "A",
+      "response": "B",
+      "isCorrect": false,
+      "reactionTime": 263,
+      "isColored": true
+    },
+    {
+      "trialNumber": 4,
+      "trialType": "trial1",
+      "stimulus": "A",
+      "response": "A",
+      "isCorrect": true,
+      "reactionTime": 819,
+      "isColored": true
+    },
+    {
+      "trialNumber": 5,
+      "trialType": "trial1",
+      "stimulus": "A",
+      "response": "A",
+      "isCorrect": true,
+      "reactionTime": 440,
+      "isColored": false
+    },
+    {
+      "trialNumber": 6,
+      "trialType": "trial1",
+      "stimulus": "B",
+      "response": "B",
+      "isCorrect": true,
+      "reactionTime": 898,
+      "isColored": false
+    },
+    {
+      "trialNumber": 7,
+      "trialType": "trial1",
+      "stimulus": "A",
+      "response": "A",
+      "isCorrect": true,
+      "reactionTime": 931,
+      "isColored": false
+    },
+    {
+      "trialNumber": 8,
+      "trialType": "trial1",
+      "stimulus": "B",
+      "response": "B",
+      "isCorrect": true,
+      "reactionTime": 765,
+      "isColored": true
+    },
+    {
+      "trialNumber": 9,
+      "trialType": "trial1",
+      "stimulus": "A",
+      "response": "A",
+      "isCorrect": true,
+      "reactionTime": 690,
+      "isColored": true
+    },
+    {
+      "trialNumber": 10,
+      "trialType": "trial1",
+      "stimulus": "B",
+      "response": "B",
+      "isCorrect": true,
+      "reactionTime": 1260,
+      "isColored": true
+    },
+    {
+      "trialNumber": 11,
+      "trialType": "trial1",
+      "stimulus": "B",
+      "response": "B",
+      "isCorrect": true,
+      "reactionTime": 553,
+      "isColored": true
+    },
+    {
+      "trialNumber": 12,
+      "trialType": "trial1",
+      "stimulus": "A",
+      "response": "A",
+      "isCorrect": true,
+      "reactionTime": 731,
+      "isColored": true
+    },
+    {
+      "trialNumber": 13,
+      "trialType": "trial1",
+      "stimulus": "A",
+      "response": "A",
+      "isCorrect": true,
+      "reactionTime": 586,
+      "isColored": true
+    },
+    {
+      "trialNumber": 14,
+      "trialType": "trial1",
+      "stimulus": "B",
+      "response": "B",
+      "isCorrect": true,
+      "reactionTime": 868,
+      "isColored": true
+    },
+    {
+      "trialNumber": 15,
+      "trialType": "trial1",
+      "stimulus": "B",
+      "response": "B",
+      "isCorrect": true,
+      "reactionTime": 754,
+      "isColored": false
+    },
+    {
+      "trialNumber": 16,
+      "trialType": "trial1",
+      "stimulus": "A",
+      "response": "B",
+      "isCorrect": false,
+      "reactionTime": 350,
+      "isColored": true
+    },
+    {
+      "trialNumber": 17,
+      "trialType": "trial1",
+      "stimulus": "A",
+      "response": "A",
+      "isCorrect": true,
+      "reactionTime": 627,
+      "isColored": true
+    },
+    {
+      "trialNumber": 18,
+      "trialType": "trial1",
+      "stimulus": "A",
+      "response": "A",
+      "isCorrect": true,
+      "reactionTime": 449,
+      "isColored": true
+    },
+    {
+      "trialNumber": 19,
+      "trialType": "trial1",
+      "stimulus": "A",
+      "response": "A",
+      "isCorrect": true,
+      "reactionTime": 414,
+      "isColored": false
+    },
+    {
+      "trialNumber": 20,
+      "trialType": "trial1",
+      "stimulus": "A",
+      "response": "A",
+      "isCorrect": true,
+      "reactionTime": 424,
+      "isColored": false
+    },
+    {
+      "trialNumber": 21,
+      "trialType": "trial1",
+      "stimulus": "B",
+      "response": "B",
+      "isCorrect": true,
+      "reactionTime": 980,
+      "isColored": true
+    },
+    {
+      "trialNumber": 22,
+      "trialType": "trial1",
+      "stimulus": "B",
+      "response": "B",
+      "isCorrect": true,
+      "reactionTime": 416,
+      "isColored": true
+    },
+    {
+      "trialNumber": 23,
+      "trialType": "trial1",
+      "stimulus": "B",
+      "response": "B",
+      "isCorrect": true,
+      "reactionTime": 424,
+      "isColored": true
+    },
+    {
+      "trialNumber": 24,
+      "trialType": "trial1",
+      "stimulus": "A",
+      "response": "A",
+      "isCorrect": true,
+      "reactionTime": 843,
+      "isColored": false
+    },
+    {
+      "trialNumber": 25,
+      "trialType": "trial1",
+      "stimulus": "B",
+      "response": "B",
+      "isCorrect": true,
+      "reactionTime": 715,
+      "isColored": false
+    },
+    {
+      "trialNumber": 1,
+      "trialType": "trial2",
+      "stimulus": "A",
+      "response": "B",
+      "isCorrect": true,
+      "reactionTime": 2164,
+      "isColored": false
+    },
+    {
+      "trialNumber": 2,
+      "trialType": "trial2",
+      "stimulus": "A",
+      "response": "B",
+      "isCorrect": true,
+      "reactionTime": 779,
+      "isColored": false
+    },
+    {
+      "trialNumber": 3,
+      "trialType": "trial2",
+      "stimulus": "B",
+      "response": "A",
+      "isCorrect": true,
+      "reactionTime": 641,
+      "isColored": true
+    },
+    {
+      "trialNumber": 4,
+      "trialType": "trial2",
+      "stimulus": "B",
+      "response": "A",
+      "isCorrect": true,
+      "reactionTime": 472,
+      "isColored": true
+    },
+    {
+      "trialNumber": 5,
+      "trialType": "trial2",
+      "stimulus": "A",
+      "response": "B",
+      "isCorrect": true,
+      "reactionTime": 747,
+      "isColored": true
+    },
+    {
+      "trialNumber": 6,
+      "trialType": "trial2",
+      "stimulus": "A",
+      "response": "B",
+      "isCorrect": true,
+      "reactionTime": 488,
+      "isColored": false
+    },
+    {
+      "trialNumber": 7,
+      "trialType": "trial2",
+      "stimulus": "B",
+      "response": "A",
+      "isCorrect": true,
+      "reactionTime": 731,
+      "isColored": false
+    },
+    {
+      "trialNumber": 8,
+      "trialType": "trial2",
+      "stimulus": "A",
+      "response": "B",
+      "isCorrect": true,
+      "reactionTime": 497,
+      "isColored": false
+    },
+    {
+      "trialNumber": 9,
+      "trialType": "trial2",
+      "stimulus": "A",
+      "response": "B",
+      "isCorrect": true,
+      "reactionTime": 683,
+      "isColored": true
+    },
+    {
+      "trialNumber": 10,
+      "trialType": "trial2",
+      "stimulus": "B",
+      "response": "A",
+      "isCorrect": true,
+      "reactionTime": 1310,
+      "isColored": true
+    },
+    {
+      "trialNumber": 11,
+      "trialType": "trial2",
+      "stimulus": "A",
+      "response": "B",
+      "isCorrect": true,
+      "reactionTime": 1744,
+      "isColored": false
+    },
+    {
+      "trialNumber": 12,
+      "trialType": "trial2",
+      "stimulus": "A",
+      "response": "B",
+      "isCorrect": true,
+      "reactionTime": 665,
+      "isColored": true
+    },
+    {
+      "trialNumber": 13,
+      "trialType": "trial2",
+      "stimulus": "A",
+      "response": "B",
+      "isCorrect": true,
+      "reactionTime": 569,
+      "isColored": true
+    },
+    {
+      "trialNumber": 14,
+      "trialType": "trial2",
+      "stimulus": "B",
+      "response": "A",
+      "isCorrect": true,
+      "reactionTime": 730,
+      "isColored": true
+    },
+    {
+      "trialNumber": 15,
+      "trialType": "trial2",
+      "stimulus": "B",
+      "response": "A",
+      "isCorrect": true,
+      "reactionTime": 457,
+      "isColored": true
+    },
+    {
+      "trialNumber": 16,
+      "trialType": "trial2",
+      "stimulus": "B",
+      "response": "A",
+      "isCorrect": true,
+      "reactionTime": 464,
+      "isColored": false
+    },
+    {
+      "trialNumber": 17,
+      "trialType": "trial2",
+      "stimulus": "A",
+      "response": "A",
+      "isCorrect": false,
+      "reactionTime": 393,
+      "isColored": false
+    },
+    {
+      "trialNumber": 18,
+      "trialType": "trial2",
+      "stimulus": "A",
+      "response": "B",
+      "isCorrect": true,
+      "reactionTime": 344,
+      "isColored": false
+    },
+    {
+      "trialNumber": 19,
+      "trialType": "trial2",
+      "stimulus": "B",
+      "response": "B",
+      "isCorrect": false,
+      "reactionTime": 359,
+      "isColored": false
+    },
+    {
+      "trialNumber": 20,
+      "trialType": "trial2",
+      "stimulus": "A",
+      "response": "B",
+      "isCorrect": true,
+      "reactionTime": 1076,
+      "isColored": true
+    },
+    {
+      "trialNumber": 21,
+      "trialType": "trial2",
+      "stimulus": "B",
+      "response": "A",
+      "isCorrect": true,
+      "reactionTime": 698,
+      "isColored": true
+    },
+    {
+      "trialNumber": 22,
+      "trialType": "trial2",
+      "stimulus": "B",
+      "response": "A",
+      "isCorrect": true,
+      "reactionTime": 618,
+      "isColored": false
+    },
+    {
+      "trialNumber": 23,
+      "trialType": "trial2",
+      "stimulus": "A",
+      "response": "B",
+      "isCorrect": true,
+      "reactionTime": 754,
+      "isColored": false
+    },
+    {
+      "trialNumber": 24,
+      "trialType": "trial2",
+      "stimulus": "A",
+      "response": "B",
+      "isCorrect": true,
+      "reactionTime": 522,
+      "isColored": false
+    },
+    {
+      "trialNumber": 25,
+      "trialType": "trial2",
+      "stimulus": "B",
+      "response": "A",
+      "isCorrect": true,
+      "reactionTime": 772,
+      "isColored": true
+    },
+    {
+      "trialNumber": 1,
+      "trialType": "trial3",
+      "stimulus": "B",
+      "response": "B",
+      "isCorrect": true,
+      "reactionTime": 2010,
+      "isColored": false
+    },
+    {
+      "trialNumber": 2,
+      "trialType": "trial3",
+      "stimulus": "B",
+      "response": "B",
+      "isCorrect": true,
+      "reactionTime": 521,
+      "isColored": false
+    },
+    {
+      "trialNumber": 3,
+      "trialType": "trial3",
+      "stimulus": "B",
+      "response": "B",
+      "isCorrect": true,
+      "reactionTime": 490,
+      "isColored": false
+    },
+    {
+      "trialNumber": 4,
+      "trialType": "trial3",
+      "stimulus": "B",
+      "response": "B",
+      "isCorrect": false,
+      "reactionTime": 1059,
+      "isColored": true
+    },
+    {
+      "trialNumber": 5,
+      "trialType": "trial3",
+      "stimulus": "A",
+      "response": "A",
+      "isCorrect": true,
+      "reactionTime": 787,
+      "isColored": false
+    },
+    {
+      "trialNumber": 6,
+      "trialType": "trial3",
+      "stimulus": "A",
+      "response": "A",
+      "isCorrect": true,
+      "reactionTime": 399,
+      "isColored": false
+    },
+    {
+      "trialNumber": 7,
+      "trialType": "trial3",
+      "stimulus": "A",
+      "response": "A",
+      "isCorrect": false,
+      "reactionTime": 319,
+      "isColored": true
+    },
+    {
+      "trialNumber": 8,
+      "trialType": "trial3",
+      "stimulus": "B",
+      "response": "B",
+      "isCorrect": true,
+      "reactionTime": 957,
+      "isColored": false
+    },
+    {
+      "trialNumber": 9,
+      "trialType": "trial3",
+      "stimulus": "B",
+      "response": "A",
+      "isCorrect": true,
+      "reactionTime": 1437,
+      "isColored": true
+    },
+    {
+      "trialNumber": 10,
+      "trialType": "trial3",
+      "stimulus": "B",
+      "response": "A",
+      "isCorrect": true,
+      "reactionTime": 1005,
+      "isColored": true
+    },
+    {
+      "trialNumber": 11,
+      "trialType": "trial3",
+      "stimulus": "A",
+      "response": "B",
+      "isCorrect": true,
+      "reactionTime": 907,
+      "isColored": true
+    },
+    {
+      "trialNumber": 12,
+      "trialType": "trial3",
+      "stimulus": "A",
+      "response": "B",
+      "isCorrect": true,
+      "reactionTime": 931,
+      "isColored": true
+    },
+    {
+      "trialNumber": 13,
+      "trialType": "trial3",
+      "stimulus": "B",
+      "response": "A",
+      "isCorrect": true,
+      "reactionTime": 900,
+      "isColored": true
+    },
+    {
+      "trialNumber": 14,
+      "trialType": "trial3",
+      "stimulus": "B",
+      "response": "B",
+      "isCorrect": false,
+      "reactionTime": 788,
+      "isColored": true
+    },
+    {
+      "trialNumber": 15,
+      "trialType": "trial3",
+      "stimulus": "A",
+      "response": "A",
+      "isCorrect": true,
+      "reactionTime": 985,
+      "isColored": false
+    },
+    {
+      "trialNumber": 16,
+      "trialType": "trial3",
+      "stimulus": "B",
+      "response": "A",
+      "isCorrect": true,
+      "reactionTime": 1350,
+      "isColored": true
+    },
+    {
+      "trialNumber": 17,
+      "trialType": "trial3",
+      "stimulus": "A",
+      "response": "A",
+      "isCorrect": true,
+      "reactionTime": 1111,
+      "isColored": false
+    },
+    {
+      "trialNumber": 18,
+      "trialType": "trial3",
+      "stimulus": "A",
+      "response": "A",
+      "isCorrect": true,
+      "reactionTime": 513,
+      "isColored": false
+    },
+    {
+      "trialNumber": 19,
+      "trialType": "trial3",
+      "stimulus": "B",
+      "response": "B",
+      "isCorrect": true,
+      "reactionTime": 843,
+      "isColored": false
+    },
+    {
+      "trialNumber": 20,
+      "trialType": "trial3",
+      "stimulus": "B",
+      "response": "B",
+      "isCorrect": true,
+      "reactionTime": 455,
+      "isColored": false
+    },
+    {
+      "trialNumber": 21,
+      "trialType": "trial3",
+      "stimulus": "A",
+      "response": "B",
+      "isCorrect": true,
+      "reactionTime": 1318,
+      "isColored": true
+    },
+    {
+      "trialNumber": 22,
+      "trialType": "trial3",
+      "stimulus": "B",
+      "response": "A",
+      "isCorrect": true,
+      "reactionTime": 683,
+      "isColored": true
+    },
+    {
+      "trialNumber": 23,
+      "trialType": "trial3",
+      "stimulus": "B",
+      "response": "A",
+      "isCorrect": true,
+      "reactionTime": 536,
+      "isColored": true
+    },
+    {
+      "trialNumber": 24,
+      "trialType": "trial3",
+      "stimulus": "A",
+      "response": "A",
+      "isCorrect": true,
+      "reactionTime": 1101,
+      "isColored": false
+    }
+  ],
+  "stats": {
+    "trial1": {
+      "correct": 23,
+      "incorrect": 2,
+      "averageTime": 698.92,
+      "totalTrials": 25
+    },
+    "trial2": {
+      "correct": 23,
+      "incorrect": 2,
+      "averageTime": 747.08,
+      "totalTrials": 25
+    },
+    "trial3": {
+      "correct": 21,
+      "incorrect": 3,
+      "averageTime": 891.875,
+      "totalTrials": 24
+    },
+    "overall": {
+      "correct": 67,
+      "incorrect": 7,
+      "averageTime": 777.7702702702703,
+      "totalTrials": 74
+    }
+  }
+}
