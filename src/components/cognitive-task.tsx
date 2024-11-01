@@ -70,68 +70,57 @@ const LetterAlternationTask = () => {
   }));
 
   // Keyboard event listener
-  useEffect(() => {
-    const handleKeyPress = (event) => {
-      if ((currentPhase === 'trial1' || currentPhase === 'trial2' || currentPhase === 'trial3') && 
-          showStimulus && 
-          !feedback.show) {
-        if (event.key === 'ArrowLeft') {
-          handleResponse('A');
-        } else if (event.key === 'ArrowRight') {
-          handleResponse('B');
-        }
+  // In your cognitive-task.tsx file, update the useEffect hook:
+
+useEffect(() => {
+  const handleKeyPress = (event: KeyboardEvent) => {
+    if ((currentPhase === 'trial1' || currentPhase === 'trial2' || currentPhase === 'trial3') && 
+        showStimulus && 
+        !feedback.show) {
+      if (event.key === 'ArrowLeft') {
+        handleResponse('A');
+      } else if (event.key === 'ArrowRight') {
+        handleResponse('B');
       }
-    };
-
-    window.addEventListener('keydown', handleKeyPress);
-    return () => {
-      window.removeEventListener('keydown', handleKeyPress);
-    };
-  }, [currentPhase, showStimulus, feedback.show]);
-
-  const handleRegistrationSubmit = (e) => {
-    e.preventDefault();
-    setCurrentPhase('instructions');
-  };
-
-  const startTrial = (trialType) => {
-    setCurrentPhase(trialType);
-    setCurrentTrialNumber(0);
-    setShowStimulus(true);
-    setStartTime(Date.now());
-    setPhaseStartTime(Date.now());
-    
-    if (trialType === 'trial1') {
-      setTaskStartTime(Date.now());
     }
   };
 
-  const handleTaskComplete = async () => {
-    setSaveStatus('Saving results...');
-    
-    const finalResults = {
-      participant: participantData,
-      trials: responses,
-      stats: trialStats,
-      phaseTimes: phaseTimes
-    };
-
-    const localStorageKey = saveToLocalStorage(finalResults);
-
-    try {
-      const serverResponse = await saveToServer(finalResults);
-      if (serverResponse?.success) {
-        setSaveStatus('Results saved successfully!');
-      } else {
-        setSaveStatus('Server save failed, but data is backed up locally');
-      }
-    } catch (error) {
-      console.error('Error saving results:', error);
-      setSaveStatus('Server error, but data is backed up locally');
-    }
-
-    setCurrentPhase('complete');
+  window.addEventListener('keydown', handleKeyPress);
+  return () => {
+    window.removeEventListener('keydown', handleKeyPress);
   };
+}, [currentPhase, showStimulus, feedback.show, handleResponse]); // Added handleResponse
+
+// And in handleTaskComplete, remove the localStorageKey variable:
+const handleTaskComplete = async () => {
+  setSaveStatus('Saving results...');
+  
+  try {
+    const response = await fetch('/api/save-results', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        participant: participantData,
+        trials: responses,
+        stats: trialStats,
+        phaseTimes: phaseTimes
+      }),
+    });
+
+    if (response.ok) {
+      setSaveStatus('Results saved successfully!');
+    } else {
+      setSaveStatus('Error saving results. Please contact the researcher.');
+    }
+  } catch (error) {
+    console.error('Error saving results:', error);
+    setSaveStatus('Error saving results. Please contact the researcher.');
+  }
+
+  setCurrentPhase('complete');
+};
 
   const completePhase = (currentPhase) => {
     const phaseEndTime = Date.now();

@@ -2,12 +2,14 @@
   "name": "my-cognitive-task",
   "version": "0.1.0",
   "private": true,
-  "scripts": {
-    "dev": "next dev --turbopack",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
+  {
+    "scripts": {
+      "build": "next build",
+      "dev": "next dev",
+      "lint": "next lint --fix",
+      "start": "next start"
+    }
+  }
   "dependencies": {
     "@radix-ui/react-label": "^2.1.0",
     "@radix-ui/react-slot": "^1.1.0",
